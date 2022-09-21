@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -68,4 +69,89 @@ img {
 h1, h2, h3, h4, h5, h6 {
   font-size: inherit;
   font-weight: 400;
+}
+
+body {
+  background-color: #DEB887;
+}
+
+.header {
+  margin-top: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Courgette", cursive;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.fa-note-sticky {
+  font-size: 40px;
+  padding-right: 20px;
+  color: #C2FF3D;
+}
+
+.logo {
+  color: white;
+  font-size: 40px;
+}
+
+.add_stick {
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+.add_stick:hover {
+  background-color: gainsboro;
+}
+
+.container {
+  border: 1px solid black;
+  width: 1200px;
+  height: 100vh;
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: 300px;
+  width: 400px;
+}
+
+.textarea {
+  height: 300px;
+  width: 400px;
+  resize: none;
+  position: absolute;
+}
+
+.fa-circle-xmark {
+  position: absolute;
+  margin-left: 365px;
+  margin-top: 10px;
+  font-size: 25px;
+}
+
+.fa-circle-xmark:hover {
+  color: red;
+  cursor: pointer;
+}
+
+.shadow {
+  -webkit-box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.3);
 }
