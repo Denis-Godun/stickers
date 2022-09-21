@@ -26,19 +26,25 @@ body{
 .add_stick{
     font-size: 20px;
     border-radius: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
 };
 .add_stick:hover{
     background-color: gainsboro;
 }
 .container{
-    border: 1px solid black;
+    font-family: 'Courgette', cursive;
     width: 1200px;
-    height: 100vh;
+    height: 100%;
+    margin-top: 25px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
+    justify-content: space-around;
+        flex-wrap: wrap;
 }
 .text {
+    display: none;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -50,7 +56,9 @@ width: 400px;
     height: 300px;
     width: 400px;
     resize: none;
-    position: absolute
+    position: absolute;
+    font-size: 25px;
+
 };
 .fa-circle-xmark{
     position: absolute;
@@ -61,6 +69,13 @@ width: 400px;
 .fa-circle-xmark:hover{
     color: red;
     cursor: pointer;
+}
+.item{
+    transform: rotate(5deg);
+    background-color: red;
+    height: 250px;
+    width: 250px;
+    margin-top: 25px;
 }
 
 .shadow {
