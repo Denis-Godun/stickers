@@ -72,7 +72,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 body {
-  background-color: #DEB887;
+  background-color: #deb887;
 }
 
 .header {
@@ -83,18 +83,54 @@ body {
   font-family: "Courgette", cursive;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  width: 100%;
 }
-
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .header {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .header {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 .title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .title {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .title {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
 
 .fa-note-sticky {
   font-size: 40px;
   padding-right: 20px;
-  color: #C2FF3D;
+  color: #c2ff3d;
 }
 
 .logo {
@@ -107,6 +143,20 @@ body {
   border-radius: 5px;
   padding-left: 20px;
   padding-right: 20px;
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .add_stick {
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .add_stick {
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .add_stick:hover {
