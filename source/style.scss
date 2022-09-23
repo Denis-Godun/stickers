@@ -34,14 +34,14 @@ body{
 }
 .container{
     font-family: 'Courgette', cursive;
-    width: 1200px;
+    width: 1400px;
     height: 100%;
-    margin-top: 25px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
-    justify-content: space-around;
-        flex-wrap: wrap;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 10px;
 }
 .text {
     position: absolute;
@@ -73,9 +73,14 @@ box-shadow: 0 0 0 9999px rgba(0,0,0, 0.3);
     cursor: pointer;
 }
 .item{
-    transform: rotate(5deg);
-    background-color: red;
-    height: 250px;
-    width: 250px;
-    margin-top: 25px;
+  cursor: pointer;
+    height: 300px;
+    width: 300px;
+    box-shadow: 0px 10px 24px 0px rgba(0,0,0,0.75);
 }
+.content{
+    text-align: center;
+    font-size: 25px;
+    margin: 15px;
+  word-wrap: break-word;
+};
